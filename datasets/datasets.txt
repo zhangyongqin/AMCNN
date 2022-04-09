@@ -1,0 +1,4 @@
+You can use the baseline method on two public neonatal brain data sets: nbatlas 1 and dhcp20172.
+
+1 https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-serag/
+2 http://www.developingconnectome.org/data-release/
