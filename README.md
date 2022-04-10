@@ -12,7 +12,7 @@ The main contributions of this paper are summarized as follows:
 
 ## Prerequisites 
 
-- Windows10
+- Windows 10 operating system
 - NVIDIA GPU + CUDA CuDNN (CPU untested, feedback appreciated) 
 - Keras 2.1.5;
   tensorflow-gpu 2.4.1;
