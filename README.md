@@ -43,7 +43,7 @@ model.fit(imgs_train, imgs_mask_train, batch_size=1, epochs=100, verbose=1, vali
 
 - You can train the model in the following path.
 ```bash
-AMCNN/models/model_train/models.py
+models/model_train/models.py
 ```
 
 - You can test the model in the following path.
