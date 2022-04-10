@@ -12,6 +12,7 @@ The main contributions of this paper are summarized as follows:
 
 ## Prerequisites 
 
+- windows10
 - NVIDIA GPU + CUDA CuDNN (CPU untested, feedback appreciated) 
 - Keras 2.1.5;
   tensorflow-gpu 2.4.1;
@@ -35,32 +36,12 @@ models/process/data_process.py
 ```bash
 models/model_train/models.py
 
-
-print("loading data")
-imgs_train, imgs_mask_train, imgs_test = self.load_data()
-print("loading data done")
-model = self.get_unet()
-print("got model")
-model.load_weights('AMCNN.hdf5')
-model_checkpoint = ModelCheckpoint('AMCNN.hdf5', monitor='val_loss',verbose=1, save_best_only=True)
-print('Fitting model...')
-model.fit(imgs_train, imgs_mask_train, batch_size=1, epochs=100, verbose=1, validation_split=0.1, shuffle=True,
-        callbacks=[model_checkpoint])
 ```
 
 - You can test the model in the following path.
 ```bash
 models/model_train/test_models.py
 
-imgs_train, imgs_mask_train, imgs_test = self.load_data()
-print("test_model")
-model = self.get_unet()
-print("got model")
-model.load_weights('AMCNN.hdf5')
-model_checkpoint = ModelCheckpoint('AMCNN.hdf5', monitor='val_loss',verbose=1, save_best_only=True)
-print('model predict...')
-imgs_mask_test = model.predict(imgs_test, batch_size=1, verbose=1)
-np.save('../results/imgs_mask_test.npy', imgs_mask_test)
 ```
 
 ## Citation
