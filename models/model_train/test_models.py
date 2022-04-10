@@ -320,13 +320,13 @@ class myUnet(object):
 
 
     def train(self):
-        print("loading data")
+        print("test_model")
         imgs_train, imgs_mask_train, imgs_test = self.load_data()
         print("loading data done")
         model = self.get_unet()
         print("got model")
         model.load_weights('AMCNN.hdf5')
-        print('predict test data')
+        print('model predict...')
         imgs_mask_test = model.predict(imgs_test, batch_size=1, verbose=1)
         np.save('../results/imgs_mask_test.npy', imgs_mask_test)
 
