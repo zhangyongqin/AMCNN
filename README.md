@@ -1,7 +1,8 @@
 # AMCNN
 Xunli Fan, Shixi Shan, Xianjun Li, Jinhang Li, Jizong Mi, Jian Yang, Yongqin Zhang. Attention-modulated multi-branch convolutional neural networks for neonatal brain tissue segmentation, Computers in Biology and Medicine, 2022 (Revision)
 
-![5c243482c0108208f94c4f7e5b30bac](https://user-images.githubusercontent.com/16028075/162456676-7136c55d-b80d-4cdf-bb53-61c99a464454.jpg)
+![J)7T@XETYB`P E2V@BE P V](https://user-images.githubusercontent.com/16028075/162601097-7a0661bb-166a-49fc-a9b5-388bfebb9dd8.png)
+
 
 The main contributions of this paper are summarized as follows:
 - A novel lightweight attention-modulated multi-branch encoder-decoder framework is proposed for accurate neonatal brain tissue segmentation;
@@ -50,12 +51,12 @@ AMCNN/models/model_train/models.py
 models/model_train/test_models.py
 
 imgs_train, imgs_mask_train, imgs_test = self.load_data()
-print("loading data done")
+print("test_model")
 model = self.get_unet()
 print("got model")
 model.load_weights('AMCNN.hdf5')
 model_checkpoint = ModelCheckpoint('AMCNN.hdf5', monitor='val_loss',verbose=1, save_best_only=True)
-print('Fitting model...')
+print('model predict...')
 imgs_mask_test = model.predict(imgs_test, batch_size=1, verbose=1)
 np.save('../results/imgs_mask_test.npy', imgs_mask_test)
 ```
