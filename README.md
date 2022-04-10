@@ -32,13 +32,13 @@ models/process/data_process.py
 ```
 
 
-- You can train the model by running the following py file
+- You can train the model by running the following .py file
 ```bash
 models/model_train/models.py
 
 ```
 
-- You can test the model by running the following py file
+- You can test the model by running the following .py file
 ```bash
 models/model_train/test_models.py
 
