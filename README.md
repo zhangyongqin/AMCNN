@@ -28,6 +28,14 @@ The main contributions of this paper are summarized as follows:
 ```bash
 models/process/data_process.py
 
+```
+
+
+- You can train the model in the following path.
+```bash
+models/model_train/models.py
+
+
 print("loading data")
 imgs_train, imgs_mask_train, imgs_test = self.load_data()
 print("loading data done")
@@ -38,12 +46,6 @@ model_checkpoint = ModelCheckpoint('AMCNN.hdf5', monitor='val_loss',verbose=1, s
 print('Fitting model...')
 model.fit(imgs_train, imgs_mask_train, batch_size=1, epochs=100, verbose=1, validation_split=0.1, shuffle=True,
         callbacks=[model_checkpoint])
-```
-
-
-- You can train the model in the following path.
-```bash
-models/model_train/models.py
 ```
 
 - You can test the model in the following path.
