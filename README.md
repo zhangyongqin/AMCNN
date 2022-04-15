@@ -54,6 +54,6 @@ author = {Xunli Fan, Shixi Shan, Xianjun Li, Jinhang Li, Jizong Mi, Jian Yang, Y
 journal = {Computers in Biology and Medicine},
 volume = {},
 pages = {},
-year={2022 (Revision)}
+year={2022}
 }
 ```
