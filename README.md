@@ -52,7 +52,8 @@ If you find our code or paper useful, please cite the paper:
 title = {Attention-modulated multi-branch convolutional neural networks for neonatal brain tissue segmentation},
 author = {Xunli Fan, Shixi Shan, Xianjun Li, Jinhang Li, Jizong Mi, Jian Yang, Yongqin Zhang},
 journal = {Computers in Biology and Medicine},
-volume = {},
+volume = {146},
+article id = {105522},
 pages = {},
 year={2022}
 }
